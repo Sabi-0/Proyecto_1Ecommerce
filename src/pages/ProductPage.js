@@ -22,19 +22,82 @@ const products = [
     id: 1,
     name: "Smartphone Premium",
     price: 138.61,
-    description: "Último modelo con cámara de 108MP y pantalla AMOLED",
+    description:
+      "Último modelo con cámara de 108MP, pantalla AMOLED de 6.7 pulgadas y batería de 5000mAh. Resistente al agua IP68.",
     image:
       "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ['6.7" AMOLED', "108MP Triple Cámara", "5000mAh", "IP68"],
   },
   {
     id: 2,
     name: "Laptop Ultradelgada",
     price: 542.0,
-    description: "Intel Core i7, 16GB RAM, SSD 512GB, 14 pulgadas",
+    description:
+      "Intel Core i7 de 11va generación, 16GB RAM DDR4, SSD NVMe de 512GB, pantalla IPS Full HD de 14 pulgadas.",
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ["i7-1165G7", "16GB RAM", "512GB SSD", '14" FHD'],
   },
-  // ... otros productos
+  {
+    id: 3,
+    name: "Tablet Avanzada",
+    price: 165.0,
+    description:
+      "Tablet de 10.1 pulgadas con resolución 2K, procesador octa-core, 6GB RAM y 128GB almacenamiento expandible.",
+    image:
+      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ['10.1" 2K', "Octa-Core", "6GB RAM", "128GB+SD"],
+  },
+  {
+    id: 4,
+    name: 'Smart TV 4K 55"',
+    price: 999.99,
+    description:
+      "Televisor 4K HDR con Android TV integrado, Dolby Vision, Alexa/Google Assistant y sonido Dolby Atmos.",
+    image:
+      "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ['55" 4K', "HDR10+", "Android TV", "Dolby Atmos"],
+  },
+  {
+    id: 5,
+    name: "Auriculares Inalámbricos",
+    price: 388.12,
+    description:
+      "Auriculares con cancelación de ruido activa, 30h de batería, carga rápida USB-C y calidad de sonido Hi-Res.",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ["ANC", "30h batería", "USB-C", "Hi-Res Audio"],
+  },
+  {
+    id: 6,
+    name: "Teclado Mecánico Gaming",
+    price: 138.61,
+    description:
+      "Teclado mecánico RGB con switches Red, retroiluminación personalizable y construcción aluminio.",
+    image:
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ["Switches Red", "RGB", "Anti-Ghosting", "Aluminio"],
+  },
+  {
+    id: 7,
+    name: 'Monitor Curvo 32"',
+    price: 420.99,
+    description:
+      "Monitor gaming curvo 144Hz, QHD, 1ms de respuesta, FreeSync Premium y HDR400.",
+    image:
+      "https://images.unsplash.com/photo-1546538915-a9e2c8d1a4e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ['32" Curvo', "144Hz", "QHD", "HDR400"],
+  },
+  {
+    id: 8,
+    name: "Cámara Mirrorless",
+    price: 899.0,
+    description:
+      "Cámara profesional 24.2MP, grabación 4K, estabilización 5 ejes y kit con lente 18-55mm.",
+    image:
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+    specs: ["24.2MP", "4K Video", "5-Axis IBIS", "Kit Lens"],
+  },
 ];
 
 const ProductPage = ({ cartItems, setCartItems }) => {

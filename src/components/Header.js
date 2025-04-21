@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaUser, FaSignOutAlt } from "react-icons/fa";
 import { useAuth } from "../firebase/auth/useAuth";
 import "./Header.css";
-import Banner from "./Ezpurchase.png";
+import Banner from "./purchaselogo.png";
 
 function Header({ cartItems = [] }) {
   const { currentUser, logout } = useAuth();

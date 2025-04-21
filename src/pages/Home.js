@@ -18,10 +18,34 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
   },
-  { id: 3, name: "Tablet Avanzada", price: 165.0 },
-  { id: 4, name: "Smart TV 4K", price: 9999.99 },
-  { id: 5, name: "Auriculares Inalámbricos", price: 388.12 },
-  { id: 6, name: "Teclado Mecánico", price: 138.61 },
+  {
+    id: 3,
+    name: "Tablet Avanzada",
+    price: 165.0,
+    image:
+      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    id: 4,
+    name: "Smart TV 4K",
+    price: 9999.99,
+    image:
+      "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    id: 5,
+    name: "Auriculares Inalámbricos",
+    price: 388.12,
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+  },
+  {
+    id: 6,
+    name: "Teclado Mecánico",
+    price: 138.61,
+    image:
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+  },
 ];
 
 const Home = ({ cartItems, setCartItems }) => {
@@ -182,9 +206,3 @@ const styles = {
     gap: "25px",
     justifyContent: "center",
     padding: "20px",
-    maxWidth: "1200px",
-    margin: "0 auto",
-  },
-};
-
-export default Home;
